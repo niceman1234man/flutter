@@ -8,9 +8,16 @@ class Myname extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title:
-               const Text("Title of Appbar", style: TextStyle(color: Colors.green))),
-                body: const Text('yihunie tarekegn'),
+            title: const Text("Title of Appbar",
+                style: TextStyle(color: Colors.green))),
+        body: Center(
+            child: ElevatedButton(
+          onPressed: () {
+            const Text('hi');
+          },
+          child: const Text('my button'),
+        )),
+        backgroundColor: Colors.amber,
       ),
     );
   }
