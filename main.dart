@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Myname());
 
-class MyApp extends StatelessWidget {
+class Myname extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(primaryColor: const Color.fromARGB(255, 140, 20, 66)),
-        home: Scaffold(
-            appBar: AppBar(title: Text('App bar text')),
-            body: Center(child: Text('Hello world'))));
+      home: Scaffold(
+        appBar: AppBar(
+            title:
+               const Text("Title of Appbar", style: TextStyle(color: Colors.green))),
+                body: const Text('yihunie tarekegn'),
+      ),
+    );
   }
 }
